@@ -1,0 +1,32 @@
+/* index.css */
+@import "tailwindcss";
+/* 1. Import Tailwind base styles */
+@tailwind utilities;
+
+/* 2. Custom colors (if you want bg-lavender, text-violet, etc.) */
+:root {
+  --lavender: #E6E6FA; /* light lavender background */
+  --violet: #8A2BE2;    /* violet text/buttons */
+}
+
+/* 3. Extend Tailwind classes (optional) */
+.bg-lavender {
+  background-color: var(--lavender);
+}
+
+.text-violet {
+  color: var(--violet);
+}
+
+.hover\:bg-purple-700:hover {
+  background-color: #6B21A8; /* example darker violet for hover */
+}
+
+/* 4. Other global styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--lavender);
+}

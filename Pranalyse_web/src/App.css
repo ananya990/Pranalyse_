@@ -1,0 +1,59 @@
+@tailwind utilities;
+
+@import "tailwindcss";
+
+/* Custom Colors for PRANALYSE Theme */
+:root {
+  --violet: #7c3aed;      /* Violet / Purple */
+  --lavender: #c4b5fd;    /* Lavender Light */
+  --blue: #3b82f6;        /* Blue */
+  --white: #ffffff;        /* White */
+  --black: #1f2937;        /* Dark Gray / Black */
+}
+
+/* Tailwind overrides */
+.bg-violet { background-color: var(--violet); }
+.bg-lavender { background-color: var(--lavender); }
+.bg-blue { background-color: var(--blue); }
+.bg-black { background-color: var(--black); }
+.text-violet { color: var(--violet); }
+.text-lavender { color: var(--lavender); }
+.text-blue { color: var(--blue); }
+.text-black { color: var(--black); }
+.text-white { color: var(--white); }
+
+/* Additional global styles */
+body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+.home-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
