@@ -33,7 +33,7 @@ Follow this structure strictly:
 Tone: supportive, simple, safe, non-medical.
 """;
 
-const String GEMINI_API_KEY = "AIzaSyDuPJ7b2hNSnBK-FQrvfYaaZNoG8l5S4ig";
+const String GEMINI_API_KEY = "";
 const String GEMINI_ENDPOINT =
     "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent";
 
