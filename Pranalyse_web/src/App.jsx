@@ -30,6 +30,8 @@ import EveningWindDown from "./pages/EveningWindDown";
 import ConsistencyChallenge from "./pages/ConsistencyChallenge";
 import PoseDetect from "./pages/PoseDetect";
 
+import NotFound from "./pages/NotFound";
+
 function App() {
   return (
     <Router>
@@ -60,6 +62,9 @@ function App() {
           <Route path="/evening-winddown" element={<EveningWindDown />} />
           <Route path="/consistency-challenge" element={<ConsistencyChallenge />} />
           <Route path="/pose-detect" element={<PoseDetect />} />
+
+          <Route path="*" element={<NotFound />} />
+          
         </Routes>
       </div>
       <Footer />
